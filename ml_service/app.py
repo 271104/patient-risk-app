@@ -18,7 +18,7 @@ app = FastAPI(title="Patient Cost & Risk Prediction Service")
 # Allow the Node backend (and, for local testing, the Vite dev server) to call this.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[""https://patient-backend-2vmt.onrender.com""],
+    allow_origins=["https://patient-backend-2vmt.onrender.com"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
